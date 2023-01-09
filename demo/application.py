@@ -3,6 +3,8 @@
 @since 7/1/2020
 @see https://github.com/gusdnd852
 """
+import sys
+sys.path.append('kochat이 설치된 최상위 폴더 경로')
 from flask import render_template
 
 from kochat.app import KochatApi
