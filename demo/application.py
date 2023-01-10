@@ -4,7 +4,7 @@
 @see https://github.com/gusdnd852
 """
 import sys
-sys.path.append('C:\Users\KJW\kochatwork')
+sys.path.append('C:/Users/KJW/chatproject/kochat')
 from flask import render_template
 
 from kochat.app import KochatApi
