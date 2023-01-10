@@ -50,4 +50,4 @@ def index():
 if __name__ == '__main__':
     kochat.app.template_folder = kochat.root_dir + 'templates'
     kochat.app.static_folder = kochat.root_dir + 'static'
-    kochat.app.run(port=8080, host='0.0.0.0')
+    kochat.app.run(port=8080, host='127.0.0.1')
