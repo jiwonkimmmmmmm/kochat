@@ -143,3 +143,19 @@ class Scenario:
                 'state': 'REQUIRE_' + '_'.join(required_entity),
                 'answer': None
             }
+"""
+    from kochat.app import Scenario
+    reservation_scenario = Scenario(
+        intent='reservation',
+        api=reservation_check,
+        # reservation_check(num_people, reservation_time) 함수->자체를 파라미터로 입력합니다.
+        # 함수를 받아서 저장해뒀다가 요청 발생시 Api 내부에서 call
+
+        scenario={
+            'NUM_PEOPLE': [4],
+            # NUM_PEOPLE의 default를 4명으로 설정
+
+            'RESERVATION_TIME': []
+            # 실제 raw데이터에 라벨링된 레이블도 위의 이름을 사용
+        }
+    )"""
